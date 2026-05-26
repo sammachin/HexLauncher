@@ -1,20 +1,11 @@
 [app]
 # The name of your app as displayed in the menu
-name = "Demo App"
+name = "Hex Launcher"
 
 # The submenu where your app should appear.
 # One of: "Badge", "Music", "Media", "Apps", "Games", "Background"
 category = "Badge"
 
-# OPTIONAL: Same as above, for compatibility with older firmware
-# versions that can't handle categories introduced afterwards.
-# One of: "Badge", "Music", "Apps"
-# menu = "Badge"
-
-# OPTIONAL: If your app prefers wifi to be off or on when entering.
-# Useful if you want more resources (false) or need wifi (true).
-# Remove if you don't want to change wifi state!
-# wifi_preference = false
 
 [entry]
 # The name of your entry point `Application` class
@@ -22,19 +13,19 @@ category = "Badge"
 
 [metadata]
 # Your nickname.  Must be at most 32 characters!
-author = "hughrawlinson"
+author = "sammachin"
 
 # License of your app as an SPDX identifier: <https://spdx.org/licenses/>
-license = "LGPL-3.0-only"
+license = MIT"
 
 # URL to the repository of your app.
-url = "https://www.github.com/hughrawlinson/tildagon-demo"
+url = "https://www.github.com/sammachin/HexLauncher"
 
 # Description of your app.  Maximum 140 characters!
-description = "A demo tildagon app for use developing the app directory"
+description = "A  tildagon app for finding hexpansions with EEPROMS and lauching their apps"
 
 # Version number of your app.  If you push a commit where this number is
 # increased, we interpret this as a new version being released.
 #
 # Version number must be an string!
-version = "0.0.1"
+version = "0.1.0"
