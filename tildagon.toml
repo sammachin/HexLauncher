@@ -6,14 +6,9 @@ name = "Hex Launcher"
 # One of: "Badge", "Music", "Media", "Apps", "Games", "Background"
 category = "Badge"
 
-
-[entry]
-# The name of your entry point `Application` class
-# class = "NickApp"
-
 [metadata]
 # Your nickname.  Must be at most 32 characters!
-author = "sammachin"
+author = "Sam Machin"
 
 # License of your app as an SPDX identifier: <https://spdx.org/licenses/>
 license = "MIT"
@@ -28,4 +23,4 @@ description = "A  tildagon app for finding hexpansions with EEPROMS and lauching
 # increased, we interpret this as a new version being released.
 #
 # Version number must be an string!
-version = "0.1.0"
+version = "0.1.1"
