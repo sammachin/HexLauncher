@@ -16,7 +16,7 @@ category = "Badge"
 author = "sammachin"
 
 # License of your app as an SPDX identifier: <https://spdx.org/licenses/>
-license = MIT"
+license = "MIT"
 
 # URL to the repository of your app.
 url = "https://www.github.com/sammachin/HexLauncher"
