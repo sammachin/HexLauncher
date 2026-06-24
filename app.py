@@ -46,15 +46,15 @@ class HexLauncherApp(app.App):
                         "header": h,
                         "has_app": False,
                     }
-                    # Check if already mounted and has app.py
                     mp = "/hexpansion_%d" % port
                     try:
-                        entry["has_app"] = "app.py" in os.listdir(mp)
+                        ls = os.listdir(mp)
+                        entry["has_app"] = "app.py" in ls or "app.mpy" in ls
                     except OSError:
-                        # Not mounted — try mounting to check
                         if self._mount(port, h):
                             try:
-                                entry["has_app"] = "app.py" in os.listdir(mp)
+                                ls = os.listdir(mp)
+                                entry["has_app"] = "app.py" in ls or "app.mpy" in ls
                             except OSError:
                                 pass
                     found.append(entry)
@@ -103,10 +103,10 @@ class HexLauncherApp(app.App):
             if not self._mount(port, entry["header"]):
                 return
 
-        # Check for app
         try:
-            if "app.py" not in os.listdir(mp):
-                self._show_toast("No app.py")
+            ls = os.listdir(mp)
+            if "app.py" not in ls and "app.mpy" not in ls:
+                self._show_toast("No app found")
                 return
         except OSError:
             self._show_toast("Read failed")
