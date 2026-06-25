@@ -23,4 +23,4 @@ description = "A  tildagon app for finding hexpansions with EEPROMS and lauching
 # increased, we interpret this as a new version being released.
 #
 # Version number must be an string!
-version = "0.1.1"
+version = "0.1.2"
